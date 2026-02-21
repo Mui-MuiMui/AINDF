@@ -15,7 +15,25 @@ AINDF (AI-Native Document Format) was created to structurally solve these frustr
 
 ---
 
-## 2. The Triple-Layer Architecture
+## 2. Why Not agents.md / .cursorrules / skills?
+
+Today, several approaches exist for giving instructions to AI — such as `CLAUDE.md`, `.cursorrules`, and skill definitions. These are valuable, but they all share a common trait: **they depend on the execution environment.**
+
+| | agents.md / skills | AINDF |
+|---|---|---|
+| **Depends on** | Execution environment (editor, AI tool) | The file itself |
+| **Effective when** | Only while using that specific tool | As long as the file exists |
+| **Enforcement** | A "request" to the AI | Structurally enforced by data |
+| **Portability** | Requires reconfiguration when switching tools | Travels with the file |
+
+Project-level configuration files tell AI **"how to behave in this workspace."**
+AINDF embeds within each file **"what this file is and what constraints it carries."**
+
+The difference is the dependency: environment-bound vs. file-bound. AINDF ensures that context survives regardless of which AI tool, editor, or team member opens the file.
+
+---
+
+## 3. The Triple-Layer Architecture
 
 AINDF proposes that a single file should consist of the following three logical layers:
 
@@ -36,7 +54,7 @@ A layer that holds "immutable facts" shared between the AI and the editor.
 
 ---
 
-## 3. Core Principles
+## 4. Core Principles
 
 * **Stop Guessing, Start Defining**: Stop asking AI to "read between the lines" and give it the "facts."
 * **Context Encapsulation**: Seal all context into a single file to achieve a portable development experience.
@@ -44,7 +62,7 @@ A layer that holds "immutable facts" shared between the AI and the editor.
 
 ---
 
-## 4. Implementation Example: .moc Format
+## 5. Implementation Example: .moc Format
 
 A reference implementation applying AINDF concepts to a UI Builder (VSCode extension "Mocker").
 
@@ -56,6 +74,6 @@ A reference implementation applying AINDF concepts to a UI Builder (VSCode exten
 
 ---
 
-## 5. License
+## 6. License
 
 MIT License
