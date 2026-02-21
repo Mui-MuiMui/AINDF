@@ -1,4 +1,4 @@
-# AINDF-Spec (AI-Native Document Format Specification)
+# AINDF (AI-Native Document Framework)
 [Japanese](./README_JP.md)
 
 Stop repeating yourself to AI. A proposal for a new data structure that encapsulates context within the code.
@@ -11,7 +11,7 @@ AI-driven code generation has evolved dramatically, yet a deep gap remains betwe
 * **AI guesses libraries or values on its own, breaking existing designs.**
 * **Correction prompts often fail to communicate exactly which part of the code needs fixing.**
 
-AINDF (AI-Native Document Format) was created to structurally solve these frustrations. Instead of relying solely on prompt engineering (verbal instructions), it achieves 100% reproducibility by **embedding AI constraints and facts directly into the data structure.**
+AINDF (AI-Native Document Framework) was created to structurally solve these frustrations. Instead of relying solely on prompt engineering (verbal instructions), it achieves near-perfect reproducibility by **embedding AI constraints and facts directly into the data structure.**
 
 ---
 

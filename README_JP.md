@@ -1,4 +1,4 @@
-# AINDF-Spec (AI-Native Document Format Specification)
+# AINDF (AI-Native Document Framework)
 [English](./README.md)
 AIに二度手間をさせない。コンテキスト（文脈）をコードに封じ込める、新しいデータ構成の提唱。
 
@@ -10,8 +10,8 @@ AIエージェントによるコード生成は劇的に進化しましたが、
 * **AIが勝手にライブラリや数値を推論して、既存の設計を壊す**
 * **修正指示を出しても、どの箇所の話かAIに伝わらない**
 
-AINDF (AI-Native Document Format) は、これらの「だるさ」を構造的に解決するために生まれました。
-プロンプトエンジニアリング（言葉による指示）に頼るのではなく、**データ構造そのものにAIへの制約と事実を組み込む**ことで、100%の再現性を実現します。
+AINDF (AI-Native Document Framework) は、これらの「だるさ」を構造的に解決するために生まれました。
+プロンプトエンジニアリング（言葉による指示）に頼るのではなく、**データ構造そのものにAIへの制約と事実を組み込む**ことで、100%に近い再現性を実現します。
 
 ---
 
@@ -66,7 +66,7 @@ AIとエディタが共有する「不変の事実」を保持するレイヤー
 
 AINDFの概念をUI Builder（VSCode拡張 Mocker）に適用したリファレンス実装です。
 
-* **[.moc ファイル形式仕様書](https://github.com/Mui-MuiMui/moc-spec/blob/main/READNE_JP.md)**
+* **[.moc ファイル形式仕様書](https://github.com/Mui-MuiMui/moc-spec/blob/main/README_JP.md)**
   * *人間・GUI・AIエージェントが協調して開発を行うための統合データ形式の実例。*
 
 > ※ 本仕様はUI向けですが、AINDFの概念はAPI定義、データベースマイグレーション、ビジネスロジック記述など、あらゆるAI駆動開発に転用可能です。
