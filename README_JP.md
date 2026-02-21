@@ -17,7 +17,7 @@ AINDF (AI-Native Document Framework) は、これらの「だるさ」を構造�
 
 ## 2. agents.md / .cursorrules / skills では不十分な理由
 
-現在、AIに指示を与える手段として `CLAUDE.md`、`.cursorrules`、スキル定義などが存在します。
+現在、AIに指示を与える手段として `CLAUDE.md`、`.cursorrules`、スキル定義などが存在します。  
 これらは有用ですが、**実装側の環境に依存する**という共通する特徴があります。
 
 | | agents.md / skills | AINDF |
